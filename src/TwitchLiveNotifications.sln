@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitchLiveNotifications.Tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Twitch.Net.Shared", "..\dependencies\Twitch.Net\Twitch.Net.Shared\Twitch.Net.Shared.csproj", "{DB5A90F9-BD57-49D5-B40E-EB1FEA82D1EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Twitch.Net", "Twitch.Net", "{DEED08FF-09E5-4060-B1E5-46AE41F18867}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14373DDD-70EA-40B5-AF33-835DD2238469} = {DEED08FF-09E5-4060-B1E5-46AE41F18867}
+		{58027EDA-C36B-4CB4-AF3D-7337FCF591FB} = {DEED08FF-09E5-4060-B1E5-46AE41F18867}
+		{DB5A90F9-BD57-49D5-B40E-EB1FEA82D1EA} = {DEED08FF-09E5-4060-B1E5-46AE41F18867}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {340D871F-75E2-4F6A-8922-49D5A664D989}
