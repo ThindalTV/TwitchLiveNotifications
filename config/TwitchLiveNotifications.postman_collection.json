@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "d77ebf28-0522-4a9d-8c80-2ac129a5c2c0",
+		"name": "TwitchLiveNotifications",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14532421"
+	},
+	"item": [
+		{
+			"name": "Get Online Channels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{AzureFunctionsDomain}}/api/GetOnlineChannels",
+					"host": [
+						"{{AzureFunctionsDomain}}"
+					],
+					"path": [
+						"api",
+						"GetOnlineChannels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WIP Clear Subscriptions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{AzureFunctionsDomain}}/api/ClearSubscriptions",
+					"host": [
+						"{{AzureFunctionsDomain}}"
+					],
+					"path": [
+						"api",
+						"ClearSubscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WIP Get Subscriptions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{AzureFunctionsDomain}}/api/GetSubscriptions",
+					"host": [
+						"{{AzureFunctionsDomain}}"
+					],
+					"path": [
+						"api",
+						"GetSubscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WIP Register Subscriptions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n      \"twitchname\": \"corbob\",\r\n      \"twittername\": \"CoryKnox\",\r\n      \"discordname\": \"227552571450064897\"\r\n    },\r\n    {\r\n      \"twitchname\": \"halbaradkenafin\",\r\n      \"twittername\": \"halbaradkenafin\",\r\n      \"discordname\": \"323898314149986305\"\r\n    },\r\n    {\r\n      \"twitchname\": \"MrThomasRayner\",\r\n      \"twittername\": \"MrThomasRayner\",\r\n      \"discordname\": \"497792454393593876\"\r\n    },\r\n    {\r\n      \"twitchname\": \"steviecoaster\",\r\n      \"twittername\": \"steviecoaster\",\r\n      \"discordname\": \"142644056391024640\"\r\n    },\r\n    {\r\n      \"twitchname\": \"PowerShellTeam\",\r\n      \"twittername\": \"PowerShell_Team\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"tylerleonhardt\",\r\n      \"twittername\": \"TylerLeonhardt\",\r\n      \"discordname\": \"342871122469060608\"\r\n    },\r\n    {\r\n      \"twitchname\": \"potatoqualitee\",\r\n      \"twittername\": \"cl\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"kevinmarquette\",\r\n      \"twittername\": \"kevinmarquette\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"glennsarti\",\r\n      \"twittername\": \"GlennSarti\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"veronicageek\",\r\n      \"twittername\": \"veronicageek\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"powershelllive\",\r\n      \"twittername\": \"PowerShellLive\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"vexx32\",\r\n      \"twittername\": \"vexx32\",\r\n      \"discordname\": \"283711673934807042\"\r\n    },\r\n    {\r\n      \"twitchname\": \"guestconfig\",\r\n      \"twittername\": \"migreene\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"theposhwolf\",\r\n      \"twittername\": \"ThePoShWolf\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"pwshdooduk\",\r\n      \"twittername\": \"ryanyates1990\",\r\n      \"discordname\": \"494524121422757888\"\r\n    },\r\n    {\r\n      \"twitchname\": \"brettmillerit\",\r\n      \"twittername\": \"BrettMiller_IT\",\r\n      \"discordname\": \"446672796693561357\"\r\n    },\r\n    {\r\n      \"twitchname\": \"charlie_schmidt\",\r\n      \"twittername\": \"\",\r\n      \"discordname\": \"252617743612903424\"\r\n    },\r\n    {\r\n      \"twitchname\": \"rchaganti\",\r\n      \"twittername\": \"ravikanth\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"poshcode\",\r\n      \"twittername\": \"Jaykul\",\r\n      \"discordname\": \"176528591041986561\"\r\n    },\r\n    {\r\n      \"twitchname\": \"scrthq\",\r\n      \"twittername\": \"scrthq\",\r\n      \"discordname\": \"446696540501966848\"\r\n    },\r\n    {\r\n      \"twitchname\": \"PowerShellMichael\",\r\n      \"twittername\": \"PowerShellMich1\",\r\n      \"discordname\": \"347997436054208512\"\r\n    },\r\n    {\r\n      \"twitchname\": \"tinkerbo\",\r\n      \"twittername\": \"ti83\",\r\n      \"discordname\": \"306133067045535754\"\r\n    },\r\n    {\r\n      \"twitchname\": \"jwtruher\",\r\n      \"twittername\": \"jwtruher\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"brispug\",\r\n      \"twittername\": \"\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"poshoholic\",\r\n      \"twittername\": \"poshoholic\",\r\n      \"discordname\": \"507970559737593866\"\r\n    },\r\n    {\r\n      \"twitchname\": \"DanielSSilvaDev\",\r\n      \"twittername\": \"DanielSilv9\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"windosnz\",\r\n      \"twittername\": \"WindosNZ\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"bridgeconf\",\r\n      \"twittername\": \"\",\r\n      \"discordname\": \"\"\r\n    },\r\n    {\r\n      \"twitchname\": \"SimonWse\",\r\n      \"twittername\": \"SimonWahlin\",\r\n      \"discordname\": \"337663594957373455\"\r\n    },\r\n    {\r\n      \"twitchname\": \"TechDufus\",\r\n      \"twittername\": \"matthewjdegarmo\",\r\n      \"discordname\": \"430511869090856971\"\r\n    },\r\n    {\r\n        \"twitchname\": \"roberthstreaming\",\r\n        \"twittername\": \"roberthtweets\",\r\n        \"discordname\": \"182168962291859456\"\r\n    }\r\n]"
+				},
+				"url": {
+					"raw": "{{AzureFunctionsDomain}}/api/RegisterSubscription",
+					"host": [
+						"{{AzureFunctionsDomain}}"
+					],
+					"path": [
+						"api",
+						"RegisterSubscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WIP Resolve Channel Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{AzureFunctionsDomain}}/api/ResolveChannelId",
+					"host": [
+						"{{AzureFunctionsDomain}}"
+					],
+					"path": [
+						"api",
+						"ResolveChannelId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resolve User Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{AzureFunctionsDomain}}/api/ResolveUserId",
+					"host": [
+						"{{AzureFunctionsDomain}}"
+					],
+					"path": [
+						"api",
+						"ResolveUserId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Twitch Callback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{AzureFunctionsDomain}}/api/SubscriptionCallback",
+					"host": [
+						"{{AzureFunctionsDomain}}"
+					],
+					"path": [
+						"api",
+						"SubscriptionCallback"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

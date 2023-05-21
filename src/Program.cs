@@ -1,6 +1,7 @@
 using Azure.Data.Tables;
 using Azure.Identity;
 using Microsoft.Extensions.Azure;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
@@ -9,6 +10,14 @@ using Twitch.Net.EventSub;
 using TwitchLiveNotifications.Helpers;
 
 var host = new HostBuilder()
+    .ConfigureAppConfiguration(c=>
+    {
+        c.AddEnvironmentVariables();
+#if DEBUG
+        c.AddJsonFile("local.settings.json");
+        //c.AddUserSecrets(,true);
+#endif
+    })
     .ConfigureFunctionsWorkerDefaults()
     .ConfigureServices(s =>
     {
